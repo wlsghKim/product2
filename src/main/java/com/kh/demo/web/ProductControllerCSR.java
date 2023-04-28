@@ -1,3 +1,4 @@
+
 package com.kh.demo.web;
 
 import lombok.extern.slf4j.Slf4j;
@@ -13,5 +14,9 @@ public class ProductControllerCSR {
   @GetMapping("/products")
   public String view(){
     return "csr/products/view";
+  }
+  @GetMapping("/productsV2")
+  public String viewV2(){
+    return "csr/products/view2";
   }
 }
